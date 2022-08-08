@@ -1,0 +1,16 @@
+# action.yaml
+name: "Custom Action"
+description: "Run a Custom Action"
+inputs:
+  name:
+    description: "Your name"
+    required: true
+    default: ""
+outputs:
+  greetings:
+    description: "Greeting"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.name}}

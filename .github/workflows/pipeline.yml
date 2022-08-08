@@ -7,7 +7,7 @@ jobs:
     name: Run
     steps:
       - name: Pipeline run
-        uses: ./actions/
+        uses: wesleycamargo/customAction@main
         id: greeting
         with:
           name: Wes

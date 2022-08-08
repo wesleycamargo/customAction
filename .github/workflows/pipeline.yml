@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Run
     steps:
-      - name: Pipeline run
-        uses: ./
-        id: greeting
-        with:
-          name: Wes
+      # - name: Pipeline run
+      #   uses: ./
+      #   id: greeting
+      #   with:
+      #     name: Wes
 
       - name: Greetings
-        run: echo "${{ steps.greeting.outputs.greetings }}"
+        run: echo "Hello world!"
